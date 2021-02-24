@@ -13,33 +13,33 @@ msgid "No kubernetes"
 msgstr "没有kubernetes"
 
 #. i18n.T
-#: pkg/handler/app_k8s.go:64
+#: pkg/handler/app_k8s.go:66
 msgid "ID"
 msgstr "ID"
 
 #. i18n.T
-#: pkg/handler/app_k8s.go:65
+#: pkg/handler/app_k8s.go:67
 msgid "Name"
 msgstr "名称"
 
 #. i18n.T
-#: pkg/handler/app_k8s.go:66
+#: pkg/handler/app_k8s.go:68
 msgid "Cluster"
 msgstr "集群"
 
 #. i18n.T
-#: pkg/handler/app_k8s.go:67
+#: pkg/handler/app_k8s.go:69
 #, fuzzy
 msgid "Comment"
 msgstr "备注"
 
 #. i18n.T
-#: pkg/handler/app_k8s.go:86
+#: pkg/handler/app_k8s.go:88
 msgid "Page: %d, Count: %d, Total Page: %d, Total Count: %d"
 msgstr "页码：%d，每页行数：%d，总页数：%d，总数量：%d"
 
 #. i18n.T
-#: pkg/handler/app_k8s.go:106
+#: pkg/handler/app_k8s.go:108
 #, fuzzy
 msgid ""
 "Enter ID number directly login the kubernetes, multiple search use // + "
@@ -47,7 +47,7 @@ msgid ""
 msgstr "提示：输入Kubernetes的ID直接登录，二级搜索使用 // + 字段，如：//192"
 
 #. i18n.T
-#: pkg/handler/app_k8s.go:107
+#: pkg/handler/app_k8s.go:109
 #, fuzzy
 msgid "Page up: b\tPage down: n"
 msgstr "上一页：b 下一页：n"
@@ -60,18 +60,18 @@ msgstr "无数据库"
 #. i18n.T
 #. i18n.T
 #. i18n.T
-#: pkg/handler/app_mysql.go:65 pkg/handler/app_mysql.go:66
-#: pkg/handler/app_mysql.go:67
+#: pkg/handler/app_mysql.go:67 pkg/handler/app_mysql.go:68
+#: pkg/handler/app_mysql.go:69
 msgid "IP"
 msgstr "IP"
 
 #. i18n.T
-#: pkg/handler/app_mysql.go:68
+#: pkg/handler/app_mysql.go:70
 msgid "DBType"
 msgstr "数据库类型"
 
 #. i18n.T
-#: pkg/handler/app_mysql.go:69
+#: pkg/handler/app_mysql.go:71
 #, fuzzy
 msgid "DB Name"
 msgstr "数据库名称"
@@ -79,8 +79,8 @@ msgstr "数据库名称"
 #. i18n.T
 #. i18n.T
 #. i18n.T
-#: pkg/handler/app_mysql.go:70 pkg/handler/app_mysql.go:92
-#: pkg/handler/app_mysql.go:113
+#: pkg/handler/app_mysql.go:72 pkg/handler/app_mysql.go:94
+#: pkg/handler/app_mysql.go:115
 #, fuzzy
 msgid ""
 "Enter ID number directly login the database, multiple search use // + field, "
@@ -89,13 +89,13 @@ msgstr "提示：输入数据库ID直接登录，二级搜索使用 // + 字段�
 
 #. i18n.T
 #. i18n.T
-#: pkg/handler/app_mysql.go:114 pkg/handler/asset.go:56
+#: pkg/handler/app_mysql.go:116 pkg/handler/asset.go:55
 msgid "No Assets"
 msgstr "没有资产"
 
 #. i18n.T
 #. i18n.T
-#: pkg/handler/asset.go:83 pkg/handler/asset.go:84
+#: pkg/handler/asset.go:82 pkg/handler/asset.go:83
 #, fuzzy
 msgid "Hostname"
 msgstr "主机名"
@@ -104,8 +104,8 @@ msgstr "主机名"
 #. i18n.T
 #. i18n.T
 #. i18n.T
-#: pkg/handler/asset.go:85 pkg/handler/asset.go:86 pkg/handler/asset.go:104
-#: pkg/handler/asset.go:123
+#: pkg/handler/asset.go:84 pkg/handler/asset.go:85 pkg/handler/asset.go:103
+#: pkg/handler/asset.go:122
 #, fuzzy
 msgid ""
 "Enter ID number directly login the asset, multiple search use // + field, "
@@ -114,7 +114,7 @@ msgstr "提示：输入资产ID直接登录，二级搜索使用 // + 字段，�
 
 #. i18n.T
 #. i18n.T
-#: pkg/handler/asset.go:124 pkg/handler/asset_node.go:20
+#: pkg/handler/asset.go:123 pkg/handler/asset_node.go:20
 msgid "%s node has no assets"
 msgstr "%s节点没有资产"
 
@@ -229,108 +229,158 @@ msgid "Refresh done"
 msgstr "刷新完成"
 
 #. i18n.T
-#: pkg/handler/select_handler.go:143
+#: pkg/handler/select_handler.go:158
 #, fuzzy
 msgid "Search: %s"
 msgstr "搜索：%s"
 
 #. i18n.T
-#: pkg/proxy/commonswitch.go:221
+#: pkg/proxy/commonswitch.go:234
 msgid "Connect idle more than %d minutes, disconnect"
 msgstr "空闲时间超过%d分钟，断开连接"
 
 #. i18n.T
-#: pkg/proxy/commonswitch.go:229
+#: pkg/proxy/commonswitch.go:242
 msgid "Terminated by administrator"
 msgstr "管理员中断连接"
 
 #. i18n.T
-#: pkg/proxy/dbparser.go:124
+#: pkg/proxy/connection_confirm.go:19
+msgid "validate Login confirm err: Core Api failed"
+msgstr "校验登录复核失败：Core API异常"
+
+#. i18n.T
+#: pkg/proxy/connection_confirm.go:47
+#, fuzzy
+msgid "Need ticket confirm to login, already send email to the reviewers"
+msgstr "需要工单登录复核，已发邮件通知审核人"
+
+#. i18n.T
+#: pkg/proxy/connection_confirm.go:48
+#, fuzzy
+msgid "Ticket Reviewers: %s"
+msgstr "工单审核人：%s "
+
+#. i18n.T
+#: pkg/proxy/connection_confirm.go:49
+#, fuzzy
+msgid "Could copy website URL to notify reviewers: %s"
+msgstr "可复制网页地址，通知审核人：%s"
+
+#. i18n.T
+#: pkg/proxy/connection_confirm.go:50
+#, fuzzy
+msgid "Please waiting for the reviewers to confirm, enter q to exit. "
+msgstr "等待审核人复核确认，按 q 回车取消登录。"
+
+#. i18n.T
+#: pkg/proxy/connection_confirm.go:77
+msgid "Unknown status"
+msgstr "未知状态"
+
+#. i18n.T
+#: pkg/proxy/connection_confirm.go:81
+msgid "%s approved"
+msgstr "%s 审核通过"
+
+#. i18n.T
+#: pkg/proxy/connection_confirm.go:86
+msgid "%s rejected"
+msgstr "%s 审核拒绝"
+
+#. i18n.T
+#: pkg/proxy/connection_confirm.go:90
+#, fuzzy
+msgid "Cancel confirm"
+msgstr "取消登录复核"
+
+#. i18n.T
+#: pkg/proxy/dbparser.go:125
 msgid "Command `%s` is forbidden"
 msgstr "命令 `%s` 是被禁止的 ..."
 
 #. i18n.T
-#: pkg/proxy/dbproxy.go:127
+#: pkg/proxy/dbproxy.go:131
 #, fuzzy
 msgid "Connecting to Database %s %.1f"
 msgstr "开始连接数据库%s %.1f"
 
 #. i18n.T
-#: pkg/proxy/dbproxy.go:146
+#: pkg/proxy/dbproxy.go:150
 #, fuzzy
 msgid "System user <%s> and database <%s> protocol are inconsistent."
 msgstr "系统用户<%s>和资产<%s>协议不一致"
 
 #. i18n.T
-#: pkg/proxy/dbproxy.go:154
+#: pkg/proxy/dbproxy.go:158
 msgid "Database %s protocol client not installed."
 msgstr "%s 协议的数据库客户端未安装"
 
 #. i18n.T
-#: pkg/proxy/dbproxy.go:234
+#: pkg/proxy/dbproxy.go:251
 msgid "Create database session failed"
 msgstr "创建数据库会话失败"
 
 #. i18n.T
-#: pkg/proxy/dbproxy.go:246
+#: pkg/proxy/dbproxy.go:263
 msgid "Create DB domain gateway failed %s"
 msgstr "创建数据库网关失败%s"
 
 #. i18n.T
-#: pkg/proxy/dbproxy.go:253
+#: pkg/proxy/dbproxy.go:270
 msgid "Start DB domain gateway failed %s"
 msgstr "启动数据库网关失败%s"
 
 #. i18n.T
 #. i18n.T
-#: pkg/proxy/dbproxy.go:291 pkg/proxy/k8sproxy.go:82
+#: pkg/proxy/dbproxy.go:313 pkg/proxy/k8sproxy.go:86
 #, fuzzy
 msgid "Connecting to Kubernetes %s %.1f"
 msgstr "开始连接Kubernetes %s  %.1f"
 
 #. i18n.T
-#: pkg/proxy/k8sproxy.go:101
+#: pkg/proxy/k8sproxy.go:105
 #, fuzzy
 msgid "System user <%s> and kubernetes <%s> protocol are inconsistent."
 msgstr "系统用户<%s>和kubernetes<%s>协议不一致"
 
 #. i18n.T
-#: pkg/proxy/k8sproxy.go:109
+#: pkg/proxy/k8sproxy.go:113
 #, fuzzy
 msgid "%s protocol client not installed."
 msgstr "%s 协议的客户端未安装"
 
 #. i18n.T
-#: pkg/proxy/k8sproxy.go:117
+#: pkg/proxy/k8sproxy.go:121
 msgid "You don't have permission login %s"
 msgstr "你无权限登陆%s"
 
 #. i18n.T
-#: pkg/proxy/k8sproxy.go:125
+#: pkg/proxy/k8sproxy.go:129
 msgid "You get auth token failed"
 msgstr "你获取认证令牌失败"
 
 #. i18n.T
-#: pkg/proxy/k8sproxy.go:210
+#: pkg/proxy/k8sproxy.go:226
 #, fuzzy
 msgid "Create k8s session failed"
 msgstr "创建Kubernetes会话失败"
 
 #. i18n.T
-#: pkg/proxy/k8sproxy.go:222
+#: pkg/proxy/k8sproxy.go:238
 #, fuzzy
 msgid "Create k8s domain gateway failed %s"
 msgstr "创建Kubernetes网关失败%s"
 
 #. i18n.T
-#: pkg/proxy/k8sproxy.go:229
+#: pkg/proxy/k8sproxy.go:245
 msgid "Start k8s domain gateway failed %s"
 msgstr "启动kubernetes网关失败%s"
 
 #. i18n.T
 #. i18n.T
 #. i18n.T
-#: pkg/proxy/k8sproxy.go:267 pkg/proxy/parser.go:160 pkg/proxy/proxy.go:184
+#: pkg/proxy/k8sproxy.go:287 pkg/proxy/parser.go:162 pkg/proxy/proxy.go:184
 msgid "Reuse SSH connections (%s@%s) [Number of connections: %d]"
 msgstr "复用SSH连接（%s@%s）[连接数量: %d]"
 
@@ -356,34 +406,34 @@ msgid "Connect asset %s error: %s"
 msgstr "连接资产 %s 发生错误：%s"
 
 #. i18n.T
-#: pkg/proxy/proxy.go:357
+#: pkg/proxy/proxy.go:371
 msgid "Connect with api server failed"
 msgstr "连接API服务失败"
 
 #. i18n.T
-#: pkg/proxy/proxy.go:406
+#: pkg/proxy/proxy.go:425
 #, fuzzy
 msgid "Create session failed"
 msgstr "创建会话失败"
 
 #. i18n.T
-#: pkg/proxy/proxy.go:441
+#: pkg/proxy/proxy.go:460
 #, fuzzy
 msgid "Authentication failed"
 msgstr "认证失败（用户名或密码错误）"
 
 #. i18n.T
-#: pkg/proxy/proxy.go:444
+#: pkg/proxy/proxy.go:463
 msgid "Connection refused"
 msgstr "网络不通（连接拒绝）"
 
 #. i18n.T
-#: pkg/proxy/proxy.go:447
+#: pkg/proxy/proxy.go:466
 msgid "i/o timeout"
 msgstr "网络不通（连接超时）"
 
 #. i18n.T
-#: pkg/proxy/proxy.go:450
+#: pkg/proxy/proxy.go:469
 msgid "No route to host"
 msgstr "网络不通（路由不通）"
 
