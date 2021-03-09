@@ -345,7 +345,7 @@ func (p *ProxyServer) getAssetCharset() string {
 	return charset
 }
 
-func (p *ProxyServer) checkSessionConfirmLogin() bool {
+func (p *ProxyServer) checkLoginConfirm() bool {
 	srv := service.NewLoginConfirm(service.ConfirmWithUser(p.User),
 		service.ConfirmWithSystemUser(p.SystemUser),
 		service.ConfirmWithTargetID(p.Asset.ID))
@@ -357,7 +357,7 @@ func (p *ProxyServer) Proxy() {
 	if !p.preCheckRequisite() {
 		return
 	}
-	if !p.checkSessionConfirmLogin() {
+	if !p.checkLoginConfirm() {
 		if p.cacheSSHConnection != nil {
 			_ = p.cacheSSHConnection.Close()
 		}
