@@ -16,8 +16,11 @@ import (
 func validateLoginConfirm(srv *service.LoginConfirmService, userCon UserConnection) bool {
 	ok, err := srv.CheckIsNeedLoginConfirm()
 	if err != nil {
+		logger.Errorf("Conn[%s] validate login confirm api err: %s",
+			userCon.ID(), err.Error())
 		msg := i18n.T("validate Login confirm err: Core Api failed")
 		utils.IgnoreErrWriteString(userCon, msg)
+		utils.IgnoreErrWriteString(userCon, utils.CharNewLine)
 		return false
 	}
 	if !ok {
